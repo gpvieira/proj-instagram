@@ -1,0 +1,563 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    margin-right: 8px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;    
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.conteudo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    padding-right: 18px;
+    padding-left: 18px;  
+    width: 100%;
+}
+
+ion-icon {
+    height: 22px;
+    width: 22px;
+}
+
+.logo {
+    display: none;
+}
+
+.pesquisa {
+    display: none;
+}
+
+.icones {
+    display: none;
+}
+
+main {
+    width: 100%;
+}
+
+.conteudo {
+    display: flex;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
+.stories {
+    display: flex;
+    justify-content: space-between;
+    height: 121px;
+    width: 100%;
+    background-color: #FAFAFA;
+    overflow: hidden;
+    margin-top:54px;
+    position: relative;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    background-color: #FAFAFA;    
+    margin-left: 40px;     
+}
+
+.img-stories {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    top: 25px;
+}
+
+.borda-stories {
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    top: 20px;
+}
+
+h3 {
+    position: absolute;
+    top: 90px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #262626;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    margin-bottom: 54px;
+}
+
+.post {
+    background: #FFFFFF;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+    border-radius: 3px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.post-topo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color:#FFFFFF;
+}
+
+.foto-peq-post {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 17px;
+    border-radius: 16px;  
+}
+
+video {
+    width: 100%;
+}
+
+.foto-post {
+    width: 100%;
+}
+
+h2 {
+    position: absolute;
+    left: 64px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.tres-pontos {
+    position: absolute;
+    right: 18px;
+}
+
+.post-baixo {
+    display: flex;
+    position: relative;
+    height: 40px;
+    align-items: center;
+}
+
+.icon-heart {
+    position: absolute;
+    left: 18px;
+}
+
+.icon-chat {
+    position: absolute;
+    left: 52px;
+}
+
+.icon-plane {
+    position: absolute;
+    left: 88px;
+}
+
+.icon-bookmark {
+    position: absolute;
+    right: 18px;
+}
+
+.curtidas {
+    display: flex;
+    height: 35px;
+    align-items: center;
+    padding-left: 18px;
+}
+
+.foto-curtida {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.curtidas p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.comentario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.comentario p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.curtir-peq {
+    height: 15px;
+    width: 15px;
+    transition: 100ms;
+}
+
+.curtir-peq:hover {
+    color:red;
+}
+
+.comentar {
+    display:flex;
+    padding-left: 18px;
+    padding-right: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.texto-coment {
+    border-radius:5px;
+    background: #FAFAFA;
+}
+
+.botao-coment {
+    background: #B2DFFC;
+    transition: 300ms;
+    border-radius: 10px;
+    margin-left: 4px;
+}
+
+.botao-coment:hover {
+    background: #0095F6
+}
+
+.sidebar {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background: #FFFFFF;
+    width: 100%;
+    z-index: 1;
+    padding-right: 18px;
+    padding-left: 18px;
+    border-top: 1px solid #DBDBDB;
+}
+
+.post:nth-child(2), .post:nth-child(3) {
+    margin-top: 60px;
+}
+
+.post:nth-child(3) {
+    border-bottom: none;
+}
+
+.hidden-mob {
+    display: none;
+}
+
+
+
+
+
+@media (min-width: 614px) {
+    .hidden-mob {
+        display: flex;
+    }
+
+    .hidden-desk {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+    }
+    
+    .pesquisa {
+        width: 24%;
+        background: #FAFAFA;
+        border: 1px solid #DBDBDB;
+        border-radius: 3px;
+        text-align: center;
+        height: 28px;
+    }
+    
+    .icones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 140px;
+    }
+    
+    .traco-logo {
+        width: 1px;
+        height: 22px;
+        background: #DBDBDB;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .stories {
+        background: #FFFFFF;
+        border: 1px solid #DBDBDB;
+        border-radius: 3px;
+        margin-top: 88px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .story {
+        background: #FFFFFF;
+    }
+
+    .post:nth-child(1) {
+        margin-top: 24px;
+    }
+
+    .post:nth-child(3) {
+        border-bottom: 1px solid #DBDBDB;        
+    }
+
+    .feed {
+        margin-bottom: 0px;
+    }
+
+    .esquerda {
+        background-color: #FAFAFA;
+    }
+
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        background-color: #FAFAFA;
+    }
+
+    main {
+        background-color: #FAFAFA;
+    }
+
+    .post {
+        border: 1px solid #DBDBDB;
+    }
+    
+    .setinha {
+        position: absolute;
+        right: 5px;
+        top: 50px;
+        z-index: 1;
+        width: 26px;
+        height: 26px;
+        color:#FFFFFF;
+    }
+}
+
+@media (min-width: 935px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 293px;
+        margin-top: 88px;
+        position: fixed;
+        left: 68%;
+    }
+
+    .post {
+        width: 614px;
+    }
+
+    .conteudo-header {
+        width: 935px;
+    }
+
+    header {
+        justify-content: center;        
+
+    }
+    
+    .conteudo {
+        justify-content:flex-start;
+        width: 935px;        
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-user {
+        width: 56px;
+        height: 56px;
+        border-radius: 28px;
+        position: absolute;
+        left: 0px;
+        top: 25px;
+    }
+
+
+
+    h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #262626;
+        position: absolute;
+        left: 72px;
+        top: 35px;
+    }
+
+    .catana {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #8E8E8E;
+        position: absolute;
+        left: 72px;
+        top: 50px;
+    }
+
+    .usuario p:nth-child(4) {
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .usuario p:nth-child(5){
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .font-sidebar {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        position: absolute;
+    }
+
+    .font-cinza {
+        color: #8E8E8E;
+    }
+
+    .font-preto {
+        color: #262626;
+    }
+
+    .font-azul {
+        color: #139EF2;
+    }
+
+    .segue-vc {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #8E8E8E;
+        position: absolute;
+    }
+
+    .font-termos {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #C7C7C7;
+    }
+
+    .foto-sugest {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+    }
+
+    .usuario {
+        display: flex;
+        position: relative;
+        height: 118px;
+        margin-bottom: 15px;
+    }
+
+    .sugestao {
+        display: flex;
+        position: relative;
+        margin-bottom: 14px;
+    }
+
+    .sugestao p:nth-child(3){
+        bottom: 0px;
+        left: 45px;
+    }
+
+    .sugestao p:nth-child(4){
+        right: 0px;
+        top: 9px;
+    }
+
+    .sugestao h2 {
+        left: 45px;
+    }
+
+    .termos-copyright {
+        margin-top: 20px;
+    }
+
+    .termos-copyright p:nth-child(2) {
+        margin-top: 20px;
+    }
+
+}
