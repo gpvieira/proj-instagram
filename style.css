@@ -291,20 +291,13 @@ footer {
     border-top: 1px solid #DBDBDB;
 }
 
-.post:nth-child(2), .post:nth-child(3) {
-    margin-top: 60px;
-}
-
-.post:nth-child(3) {
-    border-bottom: none;
+.post {
+    margin-bottom: 60px;
 }
 
 .hidden-mob {
     display: none;
 }
-
-
-
 
 
 @media (min-width: 614px) {
