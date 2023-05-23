@@ -10,7 +10,7 @@ button {
     margin-right: 8px;
 }
 
-body {
+body, input, button {
     font-family: 'Roboto', sans-serif;
 }
 
